@@ -1,0 +1,560 @@
+/* =========================================================
+   SMART LIFE MANAGER
+   INDEX.CSS
+   Global Theme + Variables + Base Styles
+   ========================================================= */
+
+
+/* =========================================================
+   GOOGLE FONT
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+
+/* =========================================================
+   ROOT THEME VARIABLES
+   ========================================================= */
+
+:root {
+
+  /* -------------------------------------------------------
+     MAIN COLORS
+     ------------------------------------------------------- */
+
+  --primary: #6557bd;
+  --primary-dark: #51439f;
+  --primary-light: #897bd7;
+
+  --primary-soft: #efedfa;
+  --primary-border: #d9d4f0;
+
+  --secondary-purple: #9281d1;
+  --secondary-purple-soft: #f3f0fb;
+  --secondary-rose: #c77f99;
+  --accent-teal: #468f88;
+  --accent-teal-soft: #e7f3f1;
+
+  /* -------------------------------------------------------
+     SECONDARY COLORS
+     ------------------------------------------------------- */
+
+  --purple: #8b72b9;
+  --purple-soft: #f0eafa;
+  --purple-border: #d9ccec;
+
+  --green: #6f9b82;
+  --green-soft: #eaf3ed;
+  --green-border: #cfe1d5;
+
+  --rose: #c9849d;
+  --rose-soft: #f8eaf0;
+  --rose-border: #ebccd9;
+
+  --blue: #6e91b8;
+  --blue-soft: #eaf1f8;
+  --blue-border: #cbdbea;
+
+  --warning: #b48a52;
+  --warning-soft: #f8f0e2;
+  --warning-border: #ead8b8;
+
+  --danger: #bb6874;
+  --danger-soft: #f9e9ec;
+  --danger-border: #ebcbd1;
+
+
+  /* -------------------------------------------------------
+     BACKGROUNDS
+     ------------------------------------------------------- */
+
+  --background: #f5f6fa;
+
+  --surface: #ffffff;
+
+  --surface-soft: #f1f2f7;
+
+  --input-background: #ffffff;
+
+
+  /* -------------------------------------------------------
+     TEXT
+     ------------------------------------------------------- */
+
+  --text-primary: #242536;
+
+  --text-secondary: #55566a;
+
+  --text-muted: #737487;
+
+  --text-light: #9293a3;
+
+
+  /* -------------------------------------------------------
+     BORDERS
+     ------------------------------------------------------- */
+
+  --border: #e3e5ed;
+
+  --border-strong: #d0d3df;
+
+
+  /* -------------------------------------------------------
+     SHADOWS
+     ------------------------------------------------------- */
+
+  --shadow-sm:
+    0 2px 10px rgba(37, 39, 62, 0.035);
+
+  --shadow-md:
+    0 10px 28px rgba(37, 39, 62, 0.075);
+
+  --shadow-lg:
+    0 18px 44px rgba(37, 39, 62, 0.11);
+
+  --shadow-xl:
+    0 25px 70px rgba(31, 24, 40, 0.18);
+
+  --shadow-primary:
+    0 6px 18px rgba(101, 87, 189, 0.22);
+
+
+  /* -------------------------------------------------------
+     LAYOUT
+     ------------------------------------------------------- */
+
+  --sidebar-width: 252px;
+
+  --header-height: 70px;
+
+
+  /* -------------------------------------------------------
+     DECORATIVE COLORS
+     ------------------------------------------------------- */
+
+  --decorative-purple: #d8c8ed;
+
+  --decorative-rose: #efd1dc;
+
+
+  /* -------------------------------------------------------
+     WELCOME BANNER
+     ------------------------------------------------------- */
+
+  --banner-one: #eee8f5;
+
+  --banner-two: #f6e9ed;
+}
+
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+[data-theme="dark"] {
+
+  /* -------------------------------------------------------
+     MAIN COLORS
+     ------------------------------------------------------- */
+
+  --primary: #b1a4f1;
+  --primary-dark: #9583df;
+  --primary-light: #c6bdf8;
+
+  --primary-soft: #2b2941;
+  --primary-border: #49436d;
+
+  --secondary-purple: #9d8bdd;
+  --secondary-purple-soft: #302e46;
+  --secondary-rose: #ce8aa2;
+  --accent-teal: #78b8ad;
+  --accent-teal-soft: #233b3a;
+
+
+  /* -------------------------------------------------------
+     SECONDARY COLORS
+     ------------------------------------------------------- */
+
+  --purple: #ae94d5;
+  --purple-soft: #2c2537;
+  --purple-border: #4b3d5d;
+
+  --green: #8db79c;
+  --green-soft: #25332b;
+  --green-border: #3d5848;
+
+  --rose: #d795aa;
+  --rose-soft: #35262d;
+  --rose-border: #5a3c48;
+
+  --blue: #8eadd0;
+  --blue-soft: #25303c;
+  --blue-border: #405267;
+
+  --warning: #d0a76d;
+  --warning-soft: #362f24;
+  --warning-border: #5b4d38;
+
+  --danger: #d78b96;
+  --danger-soft: #38262a;
+  --danger-border: #5d3d43;
+
+
+  /* -------------------------------------------------------
+     BACKGROUNDS
+     ------------------------------------------------------- */
+
+  --background: #171821;
+
+  --surface: #20212c;
+
+  --surface-soft: #292b38;
+
+  --input-background: #29262d;
+
+
+  /* -------------------------------------------------------
+     TEXT
+     ------------------------------------------------------- */
+
+  --text-primary: #f2f2fa;
+
+  --text-secondary: #c5c5d4;
+
+  --text-muted: #aaaaba;
+
+  --text-light: #858598;
+
+
+  /* -------------------------------------------------------
+     BORDERS
+     ------------------------------------------------------- */
+
+  --border: #383a49;
+
+  --border-strong: #4a4c5c;
+
+
+  /* -------------------------------------------------------
+     SHADOWS
+     ------------------------------------------------------- */
+
+  --shadow-sm:
+    0 3px 14px rgba(0, 0, 0, 0.18);
+
+  --shadow-md:
+    0 8px 25px rgba(0, 0, 0, 0.24);
+
+  --shadow-lg:
+    0 15px 40px rgba(0, 0, 0, 0.32);
+
+  --shadow-xl:
+    0 25px 70px rgba(0, 0, 0, 0.45);
+
+  --shadow-primary:
+    0 6px 18px rgba(177, 164, 241, 0.18);
+
+
+  /* -------------------------------------------------------
+     DECORATIVE COLORS
+     ------------------------------------------------------- */
+
+  --decorative-purple: #46365c;
+
+  --decorative-rose: #543541;
+
+
+  /* -------------------------------------------------------
+     WELCOME BANNER
+     ------------------------------------------------------- */
+
+  --banner-one: #2a2433;
+
+  --banner-two: #34252c;
+}
+
+
+/* =========================================================
+   GLOBAL RESET
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HTML
+   ========================================================= */
+
+html {
+  min-height: 100%;
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+
+/* =========================================================
+   BODY
+   ========================================================= */
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+
+  background: var(--background);
+
+  color: var(--text-primary);
+
+  font-family:
+    "DM Sans",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+
+/* =========================================================
+   HEADINGS
+   ========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+
+  color: var(--text-primary);
+
+  font-family:
+    "Manrope",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  letter-spacing: -0.025em;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+
+/* =========================================================
+   PARAGRAPHS
+   ========================================================= */
+
+p {
+  margin-top: 0;
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+a {
+  color: inherit;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: 0;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+
+/* =========================================================
+   IMAGES
+   ========================================================= */
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* =========================================================
+   CODE / MONOSPACE
+   ========================================================= */
+
+code,
+pre,
+kbd {
+  font-family:
+    "DM Mono",
+    "SFMono-Regular",
+    Consolas,
+    monospace;
+}
+
+
+/* =========================================================
+   SELECTION
+   ========================================================= */
+
+::selection {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   PLACEHOLDER
+   ========================================================= */
+
+::placeholder {
+  color: var(--text-muted);
+  opacity: 1;
+}
+
+
+/* =========================================================
+   DISABLED ELEMENTS
+   ========================================================= */
+
+button:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+
+/* =========================================================
+   UTILITY CLASSES
+   ========================================================= */
+
+.hidden {
+  display: none !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.w-full {
+  width: 100%;
+}
+
+
+/* =========================================================
+   FONT UTILITIES
+   ========================================================= */
+
+.font-mono {
+  font-family: "DM Mono", monospace;
+}
+
+.font-serif {
+  font-family: "Playfair Display", serif;
+}
+
+
+/* =========================================================
+   COLOR UTILITIES
+   ========================================================= */
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-success {
+  color: var(--green);
+}
+
+.text-danger {
+  color: var(--danger);
+}
+
+.text-warning {
+  color: var(--warning);
+}
+
+
+/* =========================================================
+  GLOBAL CARD STYLE
+   ========================================================= */
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: var(--shadow-sm);
+}
+
+
+/* =========================================================
+  RESPONSIVE FONT ADJUSTMENT
+   ========================================================= */
+
+@media (max-width: 680px) {
+
+  html {
+    font-size: 15px;
+  }
+
+  body {
+    font-size: 13px;
+  }
+
+}
